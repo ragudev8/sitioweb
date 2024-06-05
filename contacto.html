@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Contacto | Diamantes del Pacífico</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Diamantes del Pacífico</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                            <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">¿Quieres hablar con sonotros?</span></h1>
+            </div>
+
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                        
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                    <!-- Name input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="name">Nombre Completo</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre</div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <label for="email">Email</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">se requiere un email.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email invalido.</div>
+                                    </div>
+                                    <!-- Phone number input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <label for="phone">Celular</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un numero celular</div>
+                                    </div>
+                                    <!-- Message input-->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <label for="message">Mensaje o Comentarios</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">Por favor envienos sus comentarios.</div>
+                                    </div>
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder">¡El envío del formulario fue exitoso!</div>
+                                            <!--To activate this form, sign up at
+                                            <br />
+                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                        -->
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar el mensaje!</div></div>
+                                    <!-- Submit Button-->
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Section-->
+                   <section class="bg-light py-5">
+                    <div class="container px-5">
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-xxl-8">
+                                <div class="text-center my-5">
+                                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                                    <p class="lead fw-light mb-4">My name is Start Bootstrap and I help brands grow.</p>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
+                                    <div class="d-flex justify-content-center fs-2 gap-4">
+                                        <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+                                        <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
+                                        <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div> 
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright 2024 &copy;  Awdry & Michell</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="politicas.html">Politicas de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
