@@ -11759,3 +11759,32 @@ width: 100%;
   margin-top: -3em;
 
 }
+
+.table > :not(caption) > * > * {
+  padding: 0.75rem 0.75rem;
+}
+.table th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.table td, .table th {
+  vertical-align: middle;
+}
+.table img {
+  width: 30px;
+  height: auto;
+}
+
+
+.image-arti{
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 400px; /* Ajusta este valor según la altura máxima deseada */
+  object-fit: cover;
+}
+
+.image-minia{
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 210px; /* Ajusta este valor según la altura máxima deseada */
+}
