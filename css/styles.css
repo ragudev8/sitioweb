@@ -11786,5 +11786,5 @@ width: 100%;
 .image-minia{
   width: 100%; /* Ajusta el ancho al 100% del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
-  max-height: 210px; /* Ajusta este valor según la altura máxima deseada */
+  max-height: 210px !important; /* Ajusta este valor según la altura máxima deseada */
 }
